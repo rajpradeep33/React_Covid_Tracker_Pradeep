@@ -1,0 +1,38 @@
+.liveCaselist {
+    margin-bottom: 20px;
+
+    .liveCaselist__title {
+        color: #a71308;
+        margin-bottom: 20px;
+    }
+    .liveCaselist__body {
+        margin-top: 20px;
+        overflow-y: scroll;
+        height: 500px;
+        color: #6a5d5d;
+
+        .liveCaseList__row {
+            display: flex;
+            justify-content: space-between;
+
+            &:nth-of-type(odd) {
+                background-color: #f3f2f8;
+            }
+            .liveCaseList__country,
+            .liveCaseList__totalcase {
+                padding: 0.5rem;
+            }
+            .liveCaseList__country {
+                display: flex;
+                align-items: center;
+
+                small {
+                    color: #092ae4;
+                    cursor: pointer;
+                    margin-left: 3px;
+                    font-style: oblique;
+                }
+            }
+        }
+    }
+}

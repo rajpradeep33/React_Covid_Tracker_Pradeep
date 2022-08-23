@@ -1,0 +1,42 @@
+.statsCard {
+    flex: 1;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+    &.statsCard--selected {
+        border-top: 5px solid;
+    }
+    &.totalcases,
+    &.deaths,
+    &.activecases {
+        border-color: #cc1034;
+        color: #cc1034;
+    }
+    &.recovered {
+        border-color: #20da20;
+        color: #20da20;
+    }
+    .statsCard__title,
+    .statsCard__cases,
+    .statsCard__total {
+        text-align: center;
+    }
+    .statsCard__cases {
+        font-weight: 600;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+
+        /* small {
+            font-size: 0.9rem;
+        } */
+    }
+    .statsCard__total {
+        color: #6c757d;
+        font-weight: 700 !important;
+        font-size: 0.8rem !important;
+        margin-top: 15px !important;
+    }
+}

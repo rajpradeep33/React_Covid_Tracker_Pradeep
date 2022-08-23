@@ -1,0 +1,1 @@
+export const API_PREFIX = "https://disease.sh/v3/covid-19";
